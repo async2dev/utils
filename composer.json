@@ -1,0 +1,20 @@
+{
+  "name": "async2dev/utils",
+  "description": "Various utilitary tools used in Async2 projects",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Petru",
+      "email": "petru.office92@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Async2\\Utils\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.1.3"
+  }
+}
