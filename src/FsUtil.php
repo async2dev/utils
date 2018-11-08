@@ -5,6 +5,7 @@ namespace Async2\Utils;
 
 use function is_dir;
 use function is_readable;
+use function realpath;
 
 /**
  * Class DirectoryUtil
@@ -37,5 +38,14 @@ final class FsUtil {
      */
     public static function isReadableDirectory(string $realpath): bool {
         return self::isDirectory($realpath) && self::isReadable($realpath);
+    }
+
+    /**
+     * @param string $realpath
+     *
+     * @return bool
+     */
+    public static function exists(string $realpath): bool {
+        return false !== realpath($realpath);
     }
 }
